@@ -18,7 +18,8 @@ class signUp extends React.Component {
     };
   }
 
-  handleSubmit =async event => {
+  handleSubmit = async event => {
+    console.log(event)
     event.preventDefault()
 
     const { displayName, email, password, confirmPassword } = this.state;
@@ -88,7 +89,7 @@ class signUp extends React.Component {
               required
               label="Confirm Password"
             />
-            <CustomButton type="submit">SIGN UP</CustomButton>
+            <CustomButton type="button">SIGN UP</CustomButton>
           </form>
         </div>
       </div>
